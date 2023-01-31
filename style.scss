@@ -1,0 +1,42 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+#hero{
+    border: 1px solid $color-primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    &>h1{
+        grid-area: title;
+        color: $color-tertiary;
+        text-decoration: underline $color-secondary;
+
+    }
+
+
+    
+
+}
+
+.contents{
+    display: flex;
+    justify-content: center;
+
+    &>article{
+        border: 1px solid $color-tertiary;
+        padding: 1rem;
+        text-align: center;
+
+
+        &:nth-child(odd){
+            color: $color-secondary;
+        }
+
+        &:nth-child(even){
+            color: $color-primary;
+        }
+    }
+}
